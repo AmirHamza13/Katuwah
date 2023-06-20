@@ -1,0 +1,23 @@
+﻿@model BeratenKatuwahDomain.Employee.EmployeeModel
+
+@*<div asp-validation-summary="All"></div>
+
+<input asp-for="Id" type="hidden" />*@
+
+<div class="row">
+    <div class="col-sm-4">
+        <label>First Name</label>
+        <input type="text" class="form-control" asp-for="FirstName" />
+    </div>
+
+    <div class="col-sm-4">
+        <label>Last Name</label>
+        <input type="text" class="form-control" asp-for="LastName" />
+    </div>
+
+    <div class="col-sm-2" style="padding-top: 25px;">
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</div>
+
+@*<partial name="_ValidationScriptsPartial" />*@

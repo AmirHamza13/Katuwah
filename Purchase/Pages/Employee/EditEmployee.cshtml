@@ -1,0 +1,45 @@
+﻿@*no show edit without working*@
+@*@page
+@model Purchase.Pages.Employee.EditEmployeeModel
+@{
+}
+
+<div class="card dataForm">
+    <form method="post">
+        <partial name="_EmployeePartial.cshtml" model="Model.EmployeeModel" />
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+</div>*@
+
+@*show edit without working*@
+
+@page
+@model Purchase.Pages.Employee.EditEmployeeModel
+@{
+}
+
+<div class="card dataForm">
+    <form method="post">
+        <partial name="_EmployeePartial.cshtml" model="Model.EmployeeModel" />
+        <div class="row">
+            <div class="col-sm-2" style="padding-top:25px">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
+
+@*show edit with working*@
+@*
+@page
+@model Purchase.Pages.Employee.EditEmployeeModel
+@{
+}
+
+<div class="card dataForm">
+    <form method="post">
+        <input asp-for="EmployeeModel.Id" type="hidden" />
+        <partial name="_EmployeePartial.cshtml" model="Model.EmployeeModel" />
+    </form>
+</div>
+*@
